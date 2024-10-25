@@ -10,27 +10,26 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="开始" Id="6b65e07d-033f-48ab-b7b6-5f3d377fbda5" RegularExpression="战斗开始">
+      <Trigger Enabled="true" Name="开始" Id="6b65e07d-033f-48ab-b7b6-5f3d377fbda5" RegularExpression="战斗开始！">
         <Actions>
           <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="狍子祝你游戏愉快" ActionType="UseTTS">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="从无法战斗状态复苏了" Id="0ea59001-ce91-4ecb-8f65-6bfa3694f12e" RegularExpression="([^:]+)从无法战斗状态复苏了">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="$1是傻bbbbbbbb" ActionType="UseTTS">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="$1" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
     </Triggers>
-      <ExportedTrigger Enabled="true" Name="从无法战斗状态复苏了" Id="0ea59001-ce91-4ecb-8f65-6bfa3694f12e" RegularExpression="([^:]+)从无法战斗状态复苏了">
-    <Actions>
-      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="$1是傻bbbbbbbb" ActionType="UseTTS">
-        <Condition Enabled="true" Grouping="Or">
-          <ConditionSingle Enabled="true" ExpressionL="$1" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-        </Condition>
-      </Action>
-    </Actions>
-    <Condition Enabled="false" Grouping="Or" />
-    <Conditions />
   </ExportedFolder>
 </TriggernometryExport>
