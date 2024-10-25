@@ -5,7 +5,7 @@
     <Triggers>
       <Trigger Enabled="true" Name="倒计时" Id="26927654-1634-4591-ab75-1479700d1041" RegularExpression="距离战斗开始还有15秒">
         <Actions>
-          <Action OrderNumber="1" PlaySoundFileExpression="https://github.com/yuping8023/cuptea/blob/main/Pao/Pao_DaoJiShi15.wav" SoundRouting="None" TTSRouting="None" ActionType="PlaySound">
+          <Action OrderNumber="1" PlaySoundFileExpression="https://raw.githubusercontent.com/yuping8023/cuptea/refs/heads/main/Pao/Pao_DaoJiShi15.wav" SoundRouting="None" TTSRouting="None" ActionType="PlaySound">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
