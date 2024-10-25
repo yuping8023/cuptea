@@ -22,5 +22,15 @@
         <Conditions />
       </Trigger>
     </Triggers>
+      <ExportedTrigger Enabled="true" Name="从无法战斗状态复苏了" Id="0ea59001-ce91-4ecb-8f65-6bfa3694f12e" RegularExpression="([^:]+)从无法战斗状态复苏了">
+    <Actions>
+      <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="$1是傻bbbbbbbb" ActionType="UseTTS">
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="$1" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+        </Condition>
+      </Action>
+    </Actions>
+    <Condition Enabled="false" Grouping="Or" />
+    <Conditions />
   </ExportedFolder>
 </TriggernometryExport>
